@@ -1,0 +1,1028 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>IELTS &amp; HSK Vocabulary</title>
+<meta name="description" content="Thư viện từ, collocation và idiom cho các chủ đề IELTS.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@600;700;800&display=swap&subset=vietnamese" rel="stylesheet">
+<style>
+:root{
+  --deep:#00474a; --deep-2:#003538; --deep-3:#00292b;
+  --mint:#27c4b8; --mint-2:#7ee3da; --red:#ef3e42; --pink:#ffaaa5; --sun:#ffe08a;
+  --cream:#f7f3ec; --paper:#fff; --mist:#f3f8f7; --line:#e1e8e7; --ink:#0b2a2c; --muted:#5d6b6c;
+  --r-lg:28px; --r-md:18px; --r-sm:12px;
+  --shadow-1:0 1px 2px rgba(0,40,42,.06),0 8px 24px rgba(0,40,42,.06);
+  --shadow-2:0 2px 4px rgba(0,40,42,.06),0 24px 60px rgba(0,40,42,.14);
+  --font-d:'Plus Jakarta Sans','Be Vietnam Pro',system-ui,sans-serif;
+  --font-b:'Be Vietnam Pro',system-ui,-apple-system,'Segoe UI',sans-serif;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:var(--font-b);color:var(--ink);background:var(--paper);-webkit-font-smoothing:antialiased;line-height:1.5;overflow-x:hidden}
+button{font:inherit;color:inherit;border:0;background:none;cursor:pointer}
+input{font:inherit}
+:focus-visible{outline:3px solid var(--mint);outline-offset:3px;border-radius:10px}
+.wrap{max-width:1320px;margin:0 auto;padding:0 40px}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font:700 12px/1 var(--font-b);letter-spacing:.2em;text-transform:uppercase;color:var(--deep)}
+.eyebrow::before{content:"";width:9px;height:9px;border-radius:50%;background:var(--mint);box-shadow:0 0 0 5px rgba(39,196,184,.18)}
+
+/* ---------- HEADER ---------- */
+.top{position:sticky;top:0;z-index:50;background:rgba(255,255,255,.78);backdrop-filter:saturate(1.6) blur(16px);-webkit-backdrop-filter:saturate(1.6) blur(16px);border-bottom:1px solid rgba(0,71,74,.08)}
+.top .wrap{display:flex;align-items:center;justify-content:space-between;height:78px}
+.brand{display:flex;align-items:center;gap:14px;text-decoration:none;color:var(--deep)}
+.brand-mark{width:44px;height:44px;border-radius:14px;display:grid;place-items:center;background:linear-gradient(140deg,var(--deep) 0%,#00666a 100%);color:#fff;font:800 17px var(--font-d);letter-spacing:-.02em;position:relative;box-shadow:0 6px 16px rgba(0,71,74,.28)}
+.brand-mark::after{content:"";position:absolute;right:-3px;top:-3px;width:13px;height:13px;border-radius:50%;background:var(--mint);border:3px solid #fff}
+.brand-text{display:flex;flex-direction:column;line-height:1}
+.brand-text b{font:800 21px var(--font-d);letter-spacing:-.03em}
+.brand-text b span{color:var(--mint);}
+.brand-text small{font:600 10px var(--font-b);letter-spacing:.24em;margin-top:6px;color:var(--muted);text-transform:uppercase}
+.word-search{position:relative;flex:1;max-width:510px;margin:0 30px}
+.word-search-box{height:48px;display:flex;align-items:center;gap:11px;padding:0 16px;border:1px solid var(--line);border-radius:15px;background:rgba(243,248,247,.88);color:var(--muted);transition:border-color .2s,box-shadow .2s,background .2s}
+.word-search-box:focus-within{border-color:var(--mint);background:#fff;box-shadow:0 0 0 4px rgba(39,196,184,.12)}
+.word-search-box svg{width:19px;height:19px;flex:0 0 19px;color:var(--deep)}
+.word-search-box input{width:100%;min-width:0;border:0;outline:0;background:transparent;color:var(--ink);font-size:13px}
+.word-search-box input::placeholder{color:#738182;opacity:1}
+.word-search-results{position:absolute;top:calc(100% + 9px);left:0;right:0;z-index:80;max-height:min(65vh,480px);overflow:auto;padding:7px;border:1px solid var(--line);border-radius:16px;background:#fff;box-shadow:var(--shadow-2)}
+.word-search-results[hidden]{display:none}
+.word-search-result{width:100%;display:flex;flex-direction:column;align-items:flex-start;gap:2px;padding:10px 12px;border-radius:11px;text-align:left}
+.word-search-result:hover,.word-search-result:focus-visible{background:var(--mist)}
+.word-search-result b{font:700 14px var(--font-d);color:var(--deep)}
+.word-search-result span{font-size:12px;color:var(--muted);line-height:1.4}
+.word-search-result small{font-size:10px;letter-spacing:.06em;color:#168e87;text-transform:uppercase}
+.word-search-empty{padding:14px 12px;font-size:13px;color:var(--muted)}
+.top-right{display:flex;align-items:center;gap:20px}
+.sess-pill{display:flex;align-items:center;gap:10px;padding:9px 16px;border-radius:99px;background:var(--mist);border:1px solid var(--line);font-size:13.5px;color:var(--muted);font-weight:500}
+.sess-pill .dot{width:8px;height:8px;border-radius:50%;background:var(--mint);animation:pulse 2.4s infinite}
+.sess-pill b{display:inline-block;min-width:1ch;color:var(--deep);font:800 16px var(--font-d)}
+.sess-pill b.bump{animation:bump .5s cubic-bezier(.3,1.6,.5,1)}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(39,196,184,.55)}70%{box-shadow:0 0 0 9px rgba(39,196,184,0)}100%{box-shadow:0 0 0 0 rgba(39,196,184,0)}}
+@keyframes bump{0%{transform:scale(1)}40%{transform:scale(1.55);color:var(--mint)}100%{transform:scale(1)}}
+.btn-dark{display:inline-flex;align-items:center;gap:10px;padding:0 24px;height:52px;border-radius:16px;background:var(--deep);color:#fff;font-weight:700;font-size:15px;transition:transform .25s,box-shadow .25s,background .25s;box-shadow:0 8px 20px rgba(0,71,74,.25)}
+.btn-dark:hover{transform:translateY(-2px);background:var(--deep-2);box-shadow:0 14px 30px rgba(0,71,74,.32)}
+.btn-dark svg{width:18px;height:18px;transition:transform .25s}
+.btn-dark:hover .arr{transform:translateX(4px)}
+
+/* ---------- HERO ---------- */
+.hero{position:relative;background:var(--cream);overflow:hidden;isolation:isolate}
+.hero-bg{position:absolute;inset:0;z-index:-1;overflow:hidden;pointer-events:none;background:#7cbfee}
+.hb-img{position:absolute;inset:-6%;background:url(bg-meadow.jpg) 50% 45%/cover no-repeat;animation:hbpan 30s ease-in-out infinite alternate;will-change:transform}
+@keyframes hbpan{0%{transform:scale(1.03) translate3d(-1.5%,.5%,0)}100%{transform:scale(1.15) translate3d(1.5%,-1.5%,0)}}
+.hb-glints span{position:absolute;left:var(--x);top:var(--y);width:var(--w);height:2px;border-radius:2px;background:#fff;box-shadow:0 0 8px rgba(255,255,255,.95);opacity:0;animation:hbtw var(--d) ease-in-out var(--dl) infinite}
+@keyframes hbtw{0%,100%{opacity:0;transform:scaleX(.3)}50%{opacity:1;transform:scaleX(1)}}
+.hb-pollen span{position:absolute;left:var(--x);bottom:-12px;width:var(--w);height:var(--w);border-radius:50%;background:rgba(255,255,238,.95);box-shadow:0 0 10px rgba(255,255,220,.95);opacity:0;animation:hbfloat var(--d) linear var(--dl) infinite}
+@keyframes hbfloat{0%{transform:translate(0,0);opacity:0}10%{opacity:.9}90%{opacity:.7}100%{transform:translate(var(--dx),-900px);opacity:0}}
+.hero .wrap{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;padding-top:84px;padding-bottom:104px}
+.hero h1{font:800 clamp(44px,5.6vw,80px)/1.02 var(--font-d);letter-spacing:-.045em;color:var(--deep);margin:26px 0 26px}
+.hero h1 .hl{background:linear-gradient(100deg,var(--mint) 10%,#12a79c 90%);-webkit-background-clip:text;background-clip:text;color:transparent;white-space:nowrap}
+.hero h1 .dot{color:var(--deep)}
+.hero p.lead{font-size:19px;color:#4a5a5b;max-width:560px;line-height:1.7}
+.hero h1{color:#fff;filter:drop-shadow(0 4px 18px rgba(0,28,40,.55)) drop-shadow(0 1px 2px rgba(0,28,40,.55))}
+.hero h1 .hl{background:linear-gradient(100deg,#d6fbf7 10%,#7ee3da 90%);-webkit-background-clip:text;background-clip:text}
+.hero h1 .dot{color:#fff}
+.hero .eyebrow{color:#fff;text-shadow:0 1px 10px rgba(0,28,40,.7),0 0 2px rgba(0,28,40,.6)}
+.hero p.lead{color:#fff;font-weight:500;text-shadow:0 1px 12px rgba(0,28,40,.75),0 0 3px rgba(0,28,40,.6)}
+.hero-cta{display:flex;align-items:center;gap:22px;margin-top:40px;flex-wrap:wrap}
+.hero-cta .btn-dark{height:62px;padding:0 30px;font-size:16px;border-radius:18px}
+.hero-cta .btn-dark .arr{color:var(--mint)}
+.hero-note{display:flex;align-items:center;gap:10px;font-size:14px;color:var(--muted)}
+.hero-note i{display:inline-grid;place-items:center;width:28px;height:28px;border-radius:50%;background:#fff;box-shadow:var(--shadow-1);font-style:normal;color:var(--mint);font-weight:800}
+
+.hero-art{position:relative;height:460px;perspective:1200px}
+.hcard{position:absolute;border-radius:26px;box-shadow:var(--shadow-2);transition:transform .5s cubic-bezier(.2,.8,.2,1)}
+.hc-main{left:4%;top:12%;width:76%;padding:34px 34px 30px;background:linear-gradient(140deg,rgba(0,92,96,.94),rgba(0,53,56,.96));color:#fff;transform:rotate(-5deg) translateZ(0);animation:float 7s ease-in-out infinite;overflow:hidden;border:1px solid rgba(255,255,255,.16);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+.hc-main::after{content:"";position:absolute;right:-90px;bottom:-120px;width:300px;height:220px;border-radius:50%;background:radial-gradient(circle at 30% 30%,var(--mint-2),var(--mint) 60%,#14958b)}
+.hc-main>*{position:relative;z-index:1}
+.hc-main small{display:block;font:700 10.5px var(--font-b);letter-spacing:.2em;opacity:.7}
+.hc-main b{display:block;font:800 36px/1.1 var(--font-d);letter-spacing:-.035em;margin:34px 0 10px}
+.hc-main span{font-size:14px;opacity:.7}
+.hc-main .bar{display:flex;gap:6px;margin-top:26px}
+.hc-main .bar i{flex:1;height:5px;border-radius:9px;background:rgba(255,255,255,.18)}
+.hc-main .bar i:nth-child(-n+3){background:var(--mint)}
+.hc-quiz{right:0;top:52%;width:62%;padding:20px;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);transform:rotate(4deg);animation:float 8s -2s ease-in-out infinite}
+.hc-quiz small{display:block;font:700 10px var(--font-b);letter-spacing:.2em;color:var(--red);margin-bottom:12px}
+.hc-quiz .opt{display:flex;align-items:center;gap:10px;padding:10px 12px;border:1.5px solid var(--line);border-radius:12px;font-size:13px;margin-top:8px;color:var(--ink)}
+.hc-quiz .opt em{font:800 11px var(--font-d);font-style:normal;display:grid;place-items:center;width:24px;height:24px;border-radius:8px;background:#e7f0f1;color:var(--deep)}
+.hc-quiz .opt.ok{border-color:var(--mint);background:#e9faf8}
+.hc-quiz .opt.ok em{background:var(--mint);color:#fff}
+.hc-stat{left:0;bottom:2%;display:flex;align-items:center;gap:14px;padding:16px 22px 16px 16px;background:rgba(255,255,255,.92);backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);animation:float 6.5s -1s ease-in-out infinite}
+.hc-stat .ring{width:56px;height:56px;border-radius:50%;display:grid;place-items:center;background:conic-gradient(var(--mint) var(--p,0%),#e5eeee 0);position:relative}
+.hc-stat .ring::after{content:"";position:absolute;inset:6px;border-radius:50%;background:#fff}
+.hc-stat .ring b{position:relative;z-index:1;font:800 18px var(--font-d);color:var(--deep)}
+.hc-stat div small{display:block;font-size:12px;color:var(--muted)}
+.hc-stat div strong{font:700 14px var(--font-d);color:var(--deep)}
+@keyframes float{0%,100%{translate:0 0}50%{translate:0 -12px}}
+
+/* ---------- STATS ---------- */
+.stats{background:#fff;border-bottom:1px solid var(--line);position:relative}
+.stats .wrap{display:grid;grid-template-columns:repeat(3,auto) 1fr;align-items:stretch}
+.stats .wrap::before{content:"";position:absolute;left:40px;top:0;width:130px;height:8px;background:var(--red);border-radius:0 0 6px 6px;transform:translateY(-100%);margin-top:0}
+.stat{padding:38px 60px 38px 0;margin-right:0;position:relative}
+.stat + .stat{padding-left:28px;border-left:1px solid var(--line)}
+.stat b{display:block;font:800 52px/1 var(--font-d);letter-spacing:-.04em;color:var(--deep)}
+.stat small{display:block;margin-top:14px;font:700 11px var(--font-b);letter-spacing:.2em;text-transform:uppercase;color:var(--muted)}
+.stat-text{align-self:center;padding:0 0 0 56px;border-left:1px solid var(--line);margin-left:0;font-size:17px;color:#4a5a5b;line-height:1.7;max-width:560px;height:100%;display:flex;align-items:center}
+.stat-text b{color:var(--deep)}
+.stat-text p{padding-left:0}
+
+/* ---------- STUDY ---------- */
+.study{background:linear-gradient(180deg,var(--mist) 0%,#fff 100%);padding:96px 0 120px;scroll-margin-top:60px}
+.study-head{display:flex;justify-content:space-between;align-items:flex-end;gap:20px;margin-bottom:40px}
+.study-head h2{font:800 clamp(30px,3.4vw,46px)/1.1 var(--font-d);letter-spacing:-.04em;color:var(--deep);margin-top:16px}
+.study-grid{display:grid;grid-template-columns:392px 1fr;gap:0;border-radius:34px;overflow:hidden;box-shadow:var(--shadow-2);background:#fff;border:1px solid var(--line)}
+
+.side{background:var(--deep);color:#fff;display:flex;flex-direction:column;max-height:980px;min-height:0}
+.side-head{display:flex;align-items:center;gap:20px;padding:36px 32px 30px;background:linear-gradient(160deg,#005357,var(--deep-2));position:relative;overflow:hidden}
+.side-head::after{content:"";position:absolute;right:-60px;top:-60px;width:180px;height:180px;border-radius:50%;border:1px solid rgba(255,255,255,.1)}
+.side-ring{--p:0%;flex:none;width:62px;height:62px;border-radius:50%;display:grid;place-items:center;background:conic-gradient(var(--mint) var(--p),rgba(255,255,255,.14) 0);position:relative}
+.side-ring::after{content:"";position:absolute;inset:3px;border-radius:50%;background:var(--deep-2)}
+.side-ring b{position:relative;z-index:1;font:800 20px var(--font-d);color:var(--mint)}
+.side-head small{display:block;font:700 10.5px var(--font-b);letter-spacing:.2em;color:var(--mint)}
+.side-head h3{font:800 28px/1.1 var(--font-d);letter-spacing:-.035em;margin:6px 0 6px}
+.side-head p{font-size:12.5px;color:rgba(255,255,255,.65)}
+.topic-list{flex:1;overflow-y:auto;min-height:0;scrollbar-width:thin;scrollbar-color:rgba(255,255,255,.25) transparent}
+.topic-list::-webkit-scrollbar{width:8px}
+.topic-list::-webkit-scrollbar-thumb{background:rgba(39,196,184,.5);border-radius:9px}
+.tp{display:flex;align-items:center;gap:18px;width:100%;text-align:left;padding:22px 28px 22px 32px;border-bottom:1px solid rgba(255,255,255,.07);position:relative;transition:background .25s,padding .25s}
+.tp:hover{background:rgba(255,255,255,.06);padding-left:38px}
+.tp.active{background:#fff;color:var(--deep)}
+.tp.active::before{content:"";position:absolute;left:0;top:0;bottom:0;width:5px;background:var(--mint)}
+.tp-n{flex:none;display:grid;place-items:center;width:58px;height:58px;border-radius:18px;font:800 21px var(--font-d);color:var(--deep);transition:transform .3s cubic-bezier(.3,1.5,.5,1)}
+.tp:hover .tp-n,.tp.active .tp-n{transform:rotate(-6deg) scale(1.06)}
+.tp-b{flex:1;min-width:0}
+.tp-b small{display:block;font:700 10px var(--font-b);letter-spacing:.2em;color:var(--mint)}
+.tp.active .tp-b small{color:var(--red)}
+.tp-b b{display:block;font:700 17px/1.25 var(--font-d);margin:4px 0 3px;letter-spacing:-.01em}
+.tp-b em{font-style:normal;font-size:12.5px;color:rgba(255,255,255,.6)}
+.tp.active .tp-b em{color:var(--muted)}
+.tp-bar{height:4px;border-radius:9px;background:rgba(255,255,255,.12);margin-top:9px;overflow:hidden}
+.tp.active .tp-bar{background:#e5eeee}
+.tp-bar i{display:block;height:100%;background:var(--mint);border-radius:9px;transition:width .5s}
+.tp svg{flex:none;width:18px;height:18px;color:var(--mint);opacity:.8;transition:transform .25s}
+.tp:hover svg,.tp.active svg{transform:translateX(5px);opacity:1}
+.side-foot{padding:22px 32px 24px;background:var(--deep-3);border-top:1px solid rgba(255,255,255,.08);font-size:13.5px}
+.side-foot .row{display:flex;justify-content:space-between;align-items:center;padding:3px 0;color:rgba(255,255,255,.85)}
+.side-foot .row b{font:800 15px var(--font-d);color:var(--mint)}
+.side-foot .row.rv b{color:var(--pink)}
+.side-foot .reset{margin-top:12px;font-size:12px;color:rgba(255,255,255,.5);text-decoration:underline;text-underline-offset:3px}
+.side-foot .reset:hover{color:#fff}
+
+.panel{padding:52px 56px 56px;min-width:0;background:#fff;position:relative}
+.p-head{display:flex;justify-content:space-between;align-items:flex-start;gap:20px}
+.p-head .ey{font:700 11px var(--font-b);letter-spacing:.2em;color:var(--mint)}
+.p-head h3{font:800 clamp(34px,4.2vw,58px)/1.02 var(--font-d);letter-spacing:-.05em;color:var(--deep);margin:12px 0 12px}
+.p-head p{color:var(--muted);font-size:15px;max-width:620px}
+.p-idx{font:800 clamp(38px,4.4vw,60px)/1 var(--font-d);letter-spacing:-.05em;color:var(--deep);white-space:nowrap;padding-top:20px;font-variant-numeric:tabular-nums}
+.p-idx small{font:600 16px var(--font-d);color:var(--muted);letter-spacing:0;margin-left:4px}
+.p-prog{display:flex;align-items:center;gap:14px;margin-top:26px;font-size:13px;color:var(--muted)}
+.p-prog .track{flex:1;height:7px;border-radius:9px;background:#e8efee;overflow:hidden}
+.p-prog .track i{display:block;height:100%;width:0;border-radius:9px;background:linear-gradient(90deg,var(--mint),#12a79c);transition:width .6s cubic-bezier(.2,.8,.2,1)}
+.p-prog b{color:var(--deep);font-weight:700}
+
+.tabs{display:grid;grid-template-columns:repeat(4,1fr);gap:8px;margin:34px 0 36px;border-bottom:1px solid var(--line);position:relative}
+.tab{display:flex;align-items:center;gap:14px;padding:6px 8px 24px;text-align:left;position:relative;border-radius:14px;transition:background .2s}
+.tab:hover{background:#f6faf9}
+.tab .ic{flex:none;width:62px;height:62px;border-radius:18px;display:grid;place-items:center;background:#e7f0f1;color:var(--deep);transition:all .3s cubic-bezier(.3,1.4,.5,1)}
+.tab .ic svg{width:24px;height:24px}
+.tab b{display:block;font:700 16px var(--font-d);color:var(--deep)}
+.tab small{display:block;font-size:12px;color:var(--muted);margin-top:2px}
+.tab.active .ic{background:var(--deep);color:#fff;box-shadow:0 10px 22px rgba(0,71,74,.3);transform:translateY(-3px)}
+.tab::after{content:"";position:absolute;left:0;right:0;bottom:-1px;height:3px;background:var(--red);border-radius:3px;transform:scaleX(0);transform-origin:left;transition:transform .35s cubic-bezier(.2,.8,.2,1)}
+.tab.active::after{transform:scaleX(1)}
+
+.stage{min-height:520px;animation:rise .5s cubic-bezier(.2,.8,.2,1)}
+@keyframes rise{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:none}}
+
+/* Flashcard */
+.fc-wrap{perspective:1800px;max-width:980px}
+.fc{position:relative;height:430px;cursor:default}
+.fc.pulse{animation:cardpulse .35s ease}
+@keyframes cardpulse{50%{transform:scale(.97)}}
+.face{position:absolute;inset:0;backface-visibility:hidden;-webkit-backface-visibility:hidden;border-radius:34px;color:#fff;overflow:hidden;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:40px 56px;box-shadow:0 30px 60px -20px rgba(0,56,58,.55)}
+.face.front{background:linear-gradient(140deg,#005a5e 0%,var(--deep-2) 70%)}
+.face.back{background:linear-gradient(140deg,#006a68 0%,var(--deep) 75%);transform:rotateY(180deg)}
+.face::before{content:"";position:absolute;right:-120px;top:-120px;width:360px;height:360px;border-radius:50%;border:1px solid rgba(255,255,255,.14)}
+.face::after{content:"";position:absolute;right:-90px;bottom:-190px;width:480px;height:340px;border-radius:50%;background:var(--mint)}
+.face > *{position:relative;z-index:1}
+.f-top{position:absolute!important;left:40px;right:40px;top:34px;display:flex;justify-content:space-between;align-items:center}
+.f-top .lab{font:700 11px var(--font-b);letter-spacing:.2em;color:rgba(255,255,255,.7);text-transform:uppercase}
+.badge{display:none;align-items:center;gap:6px;padding:8px 16px;border-radius:99px;background:rgba(255,255,255,.14);border:1px solid rgba(255,255,255,.25);font:800 11px var(--font-b);letter-spacing:.1em}
+.badge.on{display:inline-flex}
+.f-word{font:800 clamp(38px,5.2vw,72px)/1.04 var(--font-d);letter-spacing:-.05em;max-width:820px}
+.f-word.hanzi-word,.q-word.hanzi-word{font-family:"Microsoft YaHei","Noto Sans CJK SC","PingFang SC",sans-serif;letter-spacing:0}
+.f-word.hanzi-word{font-size:clamp(54px,7vw,104px)}
+.hanzi-tab{font:800 25px "Microsoft YaHei","Noto Sans CJK SC",sans-serif;color:var(--deep)}
+.pinyin-options .opt-btn>span:last-child{font-size:clamp(18px,2vw,24px);font-weight:700}
+.pinyin-correction{font-weight:700;color:var(--deep)}
+.example-pinyin{color:rgba(255,255,255,.75)!important;font-size:14px!important}
+.f-ipa{display:flex;align-items:center;gap:14px;margin-top:20px;color:rgba(255,255,255,.75);font-size:17px}
+.btn-listen{display:inline-flex;align-items:center;gap:8px;padding:10px 18px;border-radius:99px;border:1px solid rgba(255,255,255,.4);font:800 11px var(--font-b);letter-spacing:.14em;color:#fff;transition:all .2s}
+.btn-listen:hover{background:#fff;color:var(--deep)}
+.btn-listen svg{width:14px;height:14px}
+.f-hint{position:absolute!important;bottom:30px;left:0;right:0;display:flex;justify-content:center;align-items:center;gap:8px;font:600 11.5px var(--font-b);color:rgba(255,255,255,.65)}
+.f-hint svg{width:16px;height:16px}
+.f-mean{font:800 clamp(30px,4vw,54px)/1.1 var(--font-d);letter-spacing:-.04em;max-width:760px}
+.f-ex{margin-top:26px;max-width:640px;font-size:16px;line-height:1.6;color:rgba(255,255,255,.92);text-align:center}
+.f-ex em{display:block;font-style:normal;color:rgba(255,255,255,.6);font-size:14.5px;margin-top:6px}
+.f-ex:empty{display:none}
+.fc .face{position:absolute;inset:0;padding:40px 56px}
+.fc .face::after{width:420px;height:250px;right:-90px;bottom:-165px}
+.f-sep{width:64px;height:3px;border-radius:3px;background:var(--mint);margin:30px 0 24px}
+.fc .f-mean{font-size:clamp(26px,3.3vw,42px);line-height:1.15;color:var(--mint-2)}
+.fc .f-ex{margin-top:20px}
+.fc-actions{display:flex;justify-content:center;gap:14px;margin-top:34px;max-width:980px}
+.nav-btn{width:74px;height:72px;border-radius:20px;border:1.5px solid var(--line);background:#fff;display:grid;place-items:center;color:var(--deep);transition:all .25s}
+.nav-btn:hover{border-color:var(--deep);transform:translateY(-3px);box-shadow:var(--shadow-1)}
+.nav-btn svg{width:20px;height:20px}
+.act-btn{height:72px;padding:0 44px;border-radius:20px;font:800 17px var(--font-d);display:inline-flex;align-items:center;gap:10px;transition:all .25s}
+.act-btn.no{background:#fde8e7;border:1.5px solid #f6c9c7;color:var(--red)}
+.act-btn.no:hover{background:var(--red);color:#fff;border-color:var(--red);transform:translateY(-3px)}
+.act-btn.yes{background:var(--mint);color:var(--deep);box-shadow:0 12px 26px rgba(39,196,184,.38)}
+.act-btn.yes:hover{transform:translateY(-3px);box-shadow:0 18px 34px rgba(39,196,184,.5)}
+.kbd-hint{max-width:980px;text-align:center;margin-top:22px;font-size:12.5px;color:var(--muted)}
+.kbd-hint kbd{font:600 11px var(--font-b);padding:3px 8px;border-radius:7px;background:#eef3f2;border:1px solid var(--line);margin:0 2px}
+
+/* Quiz / Write / Match shells */
+.qbox{background:var(--cream);border:1px solid #e7e0d2;border-radius:34px;padding:52px 56px 56px;max-width:1000px;position:relative;overflow:hidden}
+.qbox::after{content:"";position:absolute;right:-80px;top:-80px;width:220px;height:220px;border-radius:50%;background:radial-gradient(circle,rgba(39,196,184,.18),transparent 70%)}
+.qbox > *{position:relative;z-index:1}
+.q-label{font:700 11px var(--font-b);letter-spacing:.2em;color:var(--red);text-transform:uppercase}
+.q-word{font:800 clamp(40px,5vw,68px)/1.05 var(--font-d);letter-spacing:-.05em;color:var(--deep);margin:18px 0 14px}
+.q-meta{display:flex;align-items:center;gap:14px;flex-wrap:wrap}
+.q-meta .ipa{color:var(--muted);font-size:17px}
+.btn-listen.dk{border-color:var(--line);background:#fff;color:var(--deep)}
+.btn-listen.dk:hover{background:var(--deep);color:#fff}
+.q-src{margin-top:12px;font-size:13px;color:var(--mint);font-weight:600}
+.opts{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:34px}
+.opt-btn{display:flex;align-items:center;gap:16px;padding:20px 22px;border-radius:20px;background:#fff;border:1.5px solid var(--line);text-align:left;font-size:15.5px;font-weight:500;transition:all .25s;position:relative}
+.opt-btn:hover:not(:disabled){border-color:var(--deep);transform:translateY(-3px);box-shadow:var(--shadow-1)}
+.opt-btn:disabled{cursor:default}
+.opt-btn .k{flex:none;display:grid;place-items:center;width:42px;height:42px;border-radius:13px;background:#e7f0f1;font:800 14px var(--font-d);color:var(--deep);transition:all .25s}
+.opt-btn.correct{border-color:var(--mint);background:#e9faf8}
+.opt-btn.correct .k{background:var(--mint);color:#fff}
+.opt-btn.wrong{border-color:var(--red);background:#fdeceb;animation:shake .4s}
+.opt-btn.wrong .k{background:var(--red);color:#fff}
+.opt-btn.dim{opacity:.5}
+@keyframes shake{20%,60%{transform:translateX(-6px)}40%,80%{transform:translateX(6px)}}
+.feedback{margin-top:26px;display:none;align-items:center;justify-content:space-between;gap:20px;padding:20px 24px;border-radius:20px;background:#fff;border:1px solid var(--line);animation:rise .4s}
+.feedback.show{display:flex}
+.feedback .msg{font-size:15px;line-height:1.55;color:var(--ink)}
+.feedback .msg b{display:block;font:800 16px var(--font-d);margin-bottom:4px}
+.feedback .msg b.ok{color:#0d9488}
+.feedback .msg b.no{color:var(--red)}
+.feedback .msg em{display:block;color:var(--muted);font-style:normal;margin-top:4px;font-size:14px}
+.btn-next{flex:none;display:inline-flex;align-items:center;gap:10px;height:52px;padding:0 24px;border-radius:15px;background:var(--deep);color:#fff;font-weight:700;font-size:15px;transition:all .25s}
+.btn-next:hover{background:var(--deep-2);transform:translateY(-2px)}
+.btn-next svg{width:16px;height:16px;color:var(--mint)}
+.btn-ghost{flex:none;height:52px;padding:0 20px;border-radius:15px;border:1.5px solid var(--line);background:#fff;font-weight:700;font-size:14px;color:var(--deep);transition:all .2s}
+.btn-ghost:hover{border-color:var(--deep)}
+
+.w-title{font:800 clamp(34px,4.6vw,62px)/1.06 var(--font-d);letter-spacing:-.05em;color:var(--deep);margin:16px 0 10px}
+.w-sub{font-size:14.5px;color:var(--muted)}
+.w-lab{display:block;font:700 11px var(--font-b);color:var(--deep);margin:26px 0 8px;letter-spacing:.06em}
+.w-row{display:flex;gap:0;max-width:880px}
+.w-input{flex:1;height:68px;padding:0 24px;border-radius:20px 0 0 20px;border:1.5px solid var(--line);border-right:0;background:#fff;font-size:20px;color:var(--ink);outline:none;transition:box-shadow .2s,border-color .2s;min-width:0}
+.w-input:focus{border-color:var(--mint);box-shadow:0 0 0 4px rgba(39,196,184,.18)}
+.w-input.ok{border-color:var(--mint);background:#e9faf8}
+.w-input.no{border-color:var(--red);background:#fdeceb}
+.w-btn{height:68px;padding:0 34px;border-radius:0 20px 20px 0;background:#8aa9a4;color:#fff;font:800 15px var(--font-d);transition:all .25s}
+.w-btn.ready{background:var(--deep)}
+.w-btn.ready:hover{background:var(--deep-2)}
+.w-tools{display:flex;gap:14px;align-items:center;margin-top:16px;font-size:14px;color:var(--muted);flex-wrap:wrap}
+.w-tools button{color:var(--deep);font-weight:700;text-decoration:underline;text-underline-offset:4px}
+.w-tools .hint{letter-spacing:.14em;font-family:ui-monospace,Menlo,monospace;color:var(--deep);font-weight:700}
+
+.m-head{display:flex;justify-content:space-between;align-items:flex-start}
+.m-score{font:800 clamp(34px,4vw,52px)/1 var(--font-d);color:var(--mint);letter-spacing:-.04em}
+.m-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px 18px;margin-top:30px}
+.m-col{display:flex;flex-direction:column;gap:14px}
+.tile{display:flex;align-items:center;gap:14px;padding:16px 18px;min-height:74px;border-radius:20px;background:#fff;border:1.5px solid var(--line);text-align:left;font-size:15px;font-weight:500;transition:all .25s}
+.tile:hover:not(:disabled){border-color:var(--deep);transform:translateY(-3px);box-shadow:var(--shadow-1)}
+.tile .tag{flex:none;display:grid;place-items:center;width:44px;height:40px;border-radius:12px;background:#e7f0f1;font:800 11px var(--font-d);color:var(--deep);letter-spacing:.04em}
+.tile.sel{border-color:var(--deep);background:#eaf4f3;box-shadow:0 0 0 4px rgba(0,71,74,.1)}
+.tile.sel .tag{background:var(--deep);color:#fff}
+.tile.done{border-color:var(--mint);background:#e9faf8;opacity:.75;cursor:default}
+.tile.done .tag{background:var(--mint);color:#fff}
+.tile.bad{border-color:var(--red);background:#fdeceb;animation:shake .4s}
+.m-done{margin-top:28px;display:flex;align-items:center;justify-content:space-between;gap:16px;padding:20px 24px;border-radius:20px;background:#fff;border:1px solid var(--line);animation:rise .4s}
+.m-done b{font:800 17px var(--font-d);color:#0d9488}
+
+/* toast */
+.toast{position:fixed;left:50%;bottom:28px;transform:translate(-50%,30px);opacity:0;pointer-events:none;z-index:100;padding:14px 22px;border-radius:16px;background:var(--deep-3);color:#fff;font-size:14px;font-weight:500;box-shadow:var(--shadow-2);display:flex;align-items:center;gap:12px;transition:all .45s cubic-bezier(.2,1.2,.4,1);max-width:90vw}
+.toast.show{opacity:1;transform:translate(-50%,0)}
+.toast i{display:grid;place-items:center;width:26px;height:26px;border-radius:50%;background:var(--mint);color:var(--deep);font-style:normal;font-weight:800;font-size:13px;flex:none}
+.toast b{color:var(--mint)}
+
+footer{padding:34px 0;border-top:1px solid var(--line);color:var(--muted);font-size:13px;background:#fff}
+footer .wrap{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap}
+
+.reveal{opacity:0;transform:translateY(26px);transition:opacity .8s cubic-bezier(.2,.8,.2,1),transform .8s cubic-bezier(.2,.8,.2,1)}
+.reveal.in{opacity:1;transform:none}
+
+/* ---------- RESPONSIVE ---------- */
+@media (max-width:1100px){
+  .hero .wrap{grid-template-columns:1fr}
+  .hero-art{display:none}
+  .study-grid{grid-template-columns:1fr}
+  .side{max-height:none}
+  .topic-list{max-height:380px}
+  .stats .wrap{grid-template-columns:repeat(3,1fr)}
+  .stat-text{grid-column:1/-1;border-left:0;border-top:1px solid var(--line);padding:24px 0}
+  .stat{padding-right:16px}
+}
+@media (max-width:760px){
+  .wrap{padding:0 20px}
+  .top .wrap{height:auto;min-height:68px;display:grid;grid-template-columns:minmax(0,1fr) auto;row-gap:8px;padding-top:9px;padding-bottom:10px}
+  .brand-text small,.sess-pill .lbl-long,.btn-dark .t-long{display:none}
+  .brand{gap:10px;min-width:0}.brand-text b{font-size:clamp(15px,4vw,19px);white-space:nowrap}
+  .brand-mark{width:40px;height:40px;flex:0 0 40px}
+  .word-search{grid-column:1/-1;grid-row:2;margin:0;max-width:none;width:100%}
+  .word-search-box{height:42px;border-radius:13px}
+  .word-search-box input{font-size:12px}
+  .top-right{gap:8px}
+  .sess-pill{padding:8px 12px}
+  .top .btn-dark{padding:0 16px;height:44px;border-radius:13px}
+  .hero .wrap{padding-top:48px;padding-bottom:64px}
+  .stat b{font-size:34px}.stat{padding:26px 10px 26px 0}.stat + .stat{padding-left:14px}
+  .stat small{font-size:9.5px;letter-spacing:.12em}
+  .study{padding:56px 0 80px}
+  .study-head{flex-direction:column;align-items:flex-start}
+  .panel{padding:32px 20px 36px}
+  .p-head{flex-direction:column}.p-idx{padding-top:0}
+  .tabs{grid-template-columns:1fr 1fr;gap:4px}
+  .tab{padding-bottom:18px}.tab .ic{width:48px;height:48px;border-radius:14px}.tab small{display:none}
+  .fc{min-height:500px}.fc .face{padding:84px 22px 52px;border-radius:26px}.f-top{left:22px;right:22px}
+  .fc-actions{gap:8px}.nav-btn{width:52px;height:60px}.act-btn{height:60px;padding:0 18px;font-size:15px;flex:1;justify-content:center}
+  .qbox{padding:30px 20px 34px;border-radius:26px}
+  .opts,.m-grid{grid-template-columns:1fr}
+  .w-row{flex-direction:column;gap:12px}.w-input{border-right:1.5px solid var(--line);border-radius:18px}.w-btn{border-radius:18px;width:100%}
+  .feedback,.m-done{flex-direction:column;align-items:stretch}
+  .kbd-hint{display:none}
+  .side-head{padding:28px 22px 24px}.tp{padding:18px 20px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}.reveal{opacity:1;transform:none}}
+
+/* Remove the topic banner, expand the study card, and keep controls outside it. */
+@media (min-width:1101px){
+  .study{padding:24px 0 38px}
+  .study-grid{background:var(--mist)}
+  .panel{padding:20px 32px 28px;background:var(--mist)}
+  .panel .p-head,.panel .p-prog{display:none}
+  .tabs{margin:0 0 16px;gap:6px}
+  .tab{gap:10px;padding:4px 7px 12px}
+  .tab .ic{width:52px;height:52px;border-radius:15px}
+  .tab b{font-size:15px}
+  .tab small{font-size:11px}
+  .stage{min-height:0}
+  .fc-wrap{width:100%;max-width:none}
+  .fc{width:100%;height:clamp(460px,68vh,660px);min-height:0}
+  .fc .face{padding:88px 48px 48px;border-radius:30px;justify-content:center}
+  .fc .face::after{width:390px;height:240px;right:-84px;bottom:-150px}
+  .f-top{left:34px;right:34px;top:24px}
+  .f-word{font-size:clamp(38px,4vw,64px);line-height:1.08;max-width:92%;text-wrap:balance;overflow-wrap:anywhere}
+  .f-ipa{font-size:16px;margin-top:14px}
+  .fc .f-mean{font-size:clamp(30px,3.1vw,46px);line-height:1.14}
+  .fc .f-ex{font-size:15px;line-height:1.45;margin-top:14px;max-width:820px}
+  .f-sep{margin:18px 0 15px}
+  .fc-actions{position:static;display:flex;justify-content:center;width:auto;margin:14px auto 0;gap:10px;max-width:720px;transform:none}
+  .nav-btn{width:48px;height:48px;border-radius:14px}
+  .act-btn{height:48px;padding:0 22px;border-radius:14px;font-size:14px}
+  .kbd-hint{margin-top:10px}
+  .tp-b em{display:-webkit-box;-webkit-box-orient:vertical;-webkit-line-clamp:2;overflow:hidden;line-height:1.4}
+}
+@media (min-width:1101px) and (max-height:820px){
+  .fc{height:clamp(420px,58vh,520px)}
+  .fc .face{padding:78px 38px 40px}
+  .f-word{font-size:clamp(36px,3.8vw,58px)}
+  .fc .f-mean{font-size:clamp(28px,2.9vw,42px)}
+  .fc .f-ex{font-size:14px;margin-top:12px}
+  .fc-actions{margin-top:12px}
+  .kbd-hint{display:none}
+}
+@media (max-width:1100px){
+  .panel .p-head,.panel .p-prog{display:none}
+  .panel{padding:22px 24px 30px;background:var(--mist)}
+  .study-grid{background:var(--mist)}
+  .tabs{margin:0 0 16px}
+  .fc{height:480px;min-height:0}
+  .fc .face{padding:78px 28px 42px}
+  .fc-actions{position:static;display:flex;justify-content:center;transform:none;width:auto;margin:12px auto 0;gap:8px;max-width:720px}
+  .fc-actions .nav-btn{flex:0 0 44px;width:44px;height:46px}
+  .fc-actions .act-btn{height:46px;padding:0 12px;font-size:13px;flex:0 1 190px;justify-content:center}
+}
+@media(max-width:420px){
+  .brand-text b{font-size:14px;letter-spacing:-.045em}
+  .top-right{gap:7px}
+  .sess-pill{width:32px;height:32px;padding:0;justify-content:center}
+  .sess-pill>span:last-child{display:none}
+  .top .btn-dark{width:42px;padding:0;justify-content:center}
+}
+/* Use nearly all of the available viewport for the study card. */
+@media (min-width:1101px){
+  .study{padding:12px 0 18px}
+  .study .wrap{max-width:none;padding-left:10px;padding-right:10px}
+  .study-grid{border-radius:24px}
+  .panel{padding:10px 12px 16px}
+  .tabs{margin:0 0 10px}
+  .fc-wrap{max-width:none;width:100%}
+  .fc{height:clamp(460px,calc(100vh - 120px),760px)}
+  .fc-actions{margin-top:12px}
+}
+@media (min-width:761px) and (max-width:1100px){
+  .study{padding:12px 0 18px}
+  .study .wrap{max-width:none;padding-left:8px;padding-right:8px}
+  .study-grid{border-radius:22px}
+  .panel{padding:10px 10px 16px}
+  .tabs{margin:0 0 10px}
+  .fc-wrap{max-width:none;width:100%}
+  .fc{width:100%;height:clamp(440px,calc(100vh - 130px),760px)}
+  .fc .face{padding:78px 32px 42px}
+  .fc-actions{margin-top:10px}
+}
+@media (max-width:760px){
+  .study{padding:10px 0 18px}
+  .study .wrap{padding-left:8px;padding-right:8px}
+  .panel{padding:10px 8px 16px}
+  .tabs{margin:0 0 10px}
+  .fc-wrap{width:100%;max-width:none}
+  .fc{height:clamp(360px,68vh,560px)}
+  .fc .face{padding:72px 20px 38px}
+  .fc-actions{margin-top:10px;gap:6px}
+  .fc-actions .nav-btn{flex-basis:40px;width:40px;height:44px}
+  .fc-actions .act-btn{height:44px;padding:0 8px;font-size:12px}
+}
+/* Keep the complete card design and place the learning controls inside it. */
+.fc{position:relative}
+.fc .face{padding-bottom:108px}
+.fc-actions{position:absolute;z-index:5;left:50%;bottom:20px;transform:translateX(-50%);display:flex;justify-content:center;width:min(680px,calc(100% - 40px));margin:0;gap:10px;max-width:none}
+.fc-actions .nav-btn{width:48px;height:46px;border-radius:14px;flex:none}
+.fc-actions .act-btn{height:46px;min-width:170px;padding:0 18px;border-radius:14px;font-size:14px;justify-content:center;flex:0 1 220px}
+@media (min-width:1101px){.fc .face{padding-bottom:108px}}
+@media (max-width:1100px){
+  .fc .face{padding-bottom:104px}
+  .fc-actions{width:calc(100% - 28px);gap:7px;bottom:16px}
+  .fc-actions .nav-btn{width:42px;height:42px}
+  .fc-actions .act-btn{height:42px;min-width:0;padding:0 10px;font-size:13px;flex:1}
+}
+
+/* Keep both IELTS datasets inside the same study frame and animate the data swap. */
+.study-grid{transition:opacity .22s ease,transform .22s ease}
+.study-grid.corpus-out{opacity:.08;transform:translateY(10px)}
+.study-grid.corpus-in{animation:corpusIn .36s ease both}
+.study-grid[hidden]{display:none!important}
+@keyframes corpusIn{from{opacity:.08;transform:translateY(-8px)}to{opacity:1;transform:translateY(0)}}
+@media(prefers-reduced-motion:reduce){.study-grid,.study-grid.corpus-in{animation:none!important;transition:none!important}}
+
+button.tab[hidden]{display:none!important}
+/* Course selector and independent course screens */
+.stats .wrap{max-width:1280px;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px;padding-top:28px;padding-bottom:28px}
+.stat.course-card{width:100%;min-height:150px;text-align:left;display:flex;align-items:center;gap:24px;padding:25px 30px;border:1px solid var(--line);border-radius:22px;background:rgba(255,255,255,.9);color:var(--deep);cursor:pointer;transition:transform .2s,box-shadow .2s,border-color .2s}
+.stat.course-card:hover{transform:translateY(-4px);box-shadow:var(--shadow-1);border-color:var(--mint)}
+.stat.course-card.active{background:var(--deep);color:#fff;border-color:var(--deep)}
+.stat.course-card>b{font:800 clamp(30px,3.5vw,50px)/1 var(--font-b);font-variant-numeric:tabular-nums;font-feature-settings:"tnum" 1;letter-spacing:-.035em;white-space:nowrap;flex:0 0 auto;color:var(--deep)}
+.stat.course-card.active>b{color:#fff}
+.course-copy{display:flex;flex-direction:column;gap:5px;min-width:0}
+.course-copy small{font-size:11px;letter-spacing:.14em;font-weight:850;color:var(--mint);text-transform:uppercase}
+.course-copy strong{font-size:19px;line-height:1.2}
+.course-copy em{font-size:13px;line-height:1.35;color:var(--muted);font-style:normal}
+.course-card.active .course-copy em{color:#b4cece}
+.course-card.active .course-copy strong{color:#fff}
+.course-page{max-width:1500px;margin:0 auto 40px;padding:clamp(22px,4vw,56px);border-radius:30px;background:rgba(255,255,255,.95);box-shadow:var(--shadow-1);border:1px solid rgba(0,70,72,.1)}
+.course-page[hidden]{display:none!important}
+.course-page-top{display:flex;justify-content:space-between;align-items:flex-start;gap:20px;margin-bottom:30px}
+.course-page h2{margin:4px 0 10px;color:var(--deep);font-size:clamp(30px,4vw,54px);line-height:1.05;letter-spacing:-.04em}
+.course-page .course-desc{margin:0;color:var(--muted);font-size:17px}
+.course-back{border:1px solid var(--line);border-radius:14px;background:white;color:var(--deep);font:700 14px var(--font-d);padding:13px 18px;cursor:pointer;white-space:nowrap}
+.course-modes{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;margin:24px 0}
+.course-mode,.course-choice{border:1px solid var(--line);border-radius:16px;background:#f7fbfa;color:var(--deep);padding:16px;text-align:left;cursor:pointer;font:700 15px var(--font-d);transition:.18s}
+.course-mode:hover,.course-choice:hover{border-color:var(--mint);transform:translateY(-2px)}
+.course-mode.active,.course-choice.active{background:var(--deep);color:#fff;border-color:var(--deep)}
+.course-choice-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.course-choice small{display:block;margin-top:5px;font-size:12px;line-height:1.4;opacity:.72;font-weight:500}
+.course-empty{margin-top:24px;padding:24px;border-radius:20px;background:#eaf5f4;color:var(--deep);line-height:1.65}
+.course-empty strong{display:block;font-size:20px;margin-bottom:6px}
+@media(max-width:900px){.stats .wrap{grid-template-columns:1fr;gap:10px}.stat.course-card{min-height:110px}.course-choice-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.course-modes{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:520px){.course-page-top{display:block}.course-back{margin-top:18px}.course-page{border-radius:20px;padding:20px}.course-choice-grid{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="#" aria-label="IELTS & HSK Vocabulary">
+      <span class="brand-mark">IV</span>
+      <span class="brand-text"><b>IELTS &amp; HSK <span>Vocabulary</span></b><small>Collocation · Idiom · Word</small></span>
+    </a>
+    <div class="word-search">
+      <label class="word-search-box" for="wordSearchInput">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 4.5 4.5"/></svg>
+        <input id="wordSearchInput" type="search" placeholder="Tra từ tiếng Anh, 中文, Pinyin hoặc nghĩa..." autocomplete="off" aria-label="Tra từ trong các bộ IELTS và HSK" aria-controls="wordSearchResults" aria-expanded="false">
+      </label>
+      <div class="word-search-results" id="wordSearchResults" role="listbox" hidden></div>
+    </div>
+    <div class="top-right">
+      <div class="sess-pill" title="Số từ bạn đã đánh dấu đã học trong phiên này"><span class="dot"></span><span><span class="lbl-long">Phiên này · </span><b id="sessCount">0</b> từ đã học</span></div>
+      <button class="btn-dark" id="btnDownload" type="button">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4v11m0 0l-4.5-4.5M12 15l4.5-4.5M5 19h14"/></svg>
+        <span class="t-long">Tải bộ từ</span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="hero-bg" aria-hidden="true"><div class="hb-img"></div><div class="hb-glints" id="heroGlints"></div><div class="hb-pollen" id="heroPollen"></div></div>
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">IELTS Vocabulary</span>
+      <h1>Thư viện từ vựng,<br>IDOM cho IELTS<br>và HSK<span class="dot">.</span></h1>
+      <p class="lead">Mỗi mục từ đủ ngắn để ghi nhớ và đủ rõ để đưa vào câu, kèm phiên âm và ví dụ thật.</p>
+      <div class="hero-cta">
+        <a class="btn-dark" href="#study" id="btnStart">Bắt đầu học
+          <svg class="arr" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m0 0l-6-6m6 6l-6 6"/></svg>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="stats" id="coursePicker">
+  <div class="wrap">
+    <button class="stat course-card active" type="button" data-course="huyforum" aria-pressed="true"><b>20</b><span class="course-copy"><small>CHỦ ĐỀ IELTS</small><strong>HuyForum</strong><em>Collocation · Idiom · Word</em></span></button>
+    <button class="stat course-card" type="button" data-course="ielts4000" aria-pressed="false"><b>4.000</b><span class="course-copy"><small>TỪ VỰNG IELTS</small><strong>Theo chủ đề</strong><em>Học theo từng lĩnh vực</em></span></button>
+    <button class="stat course-card" type="button" data-course="hsk" aria-pressed="false"><b>HSK 1–6</b><span class="course-copy"><small>TIẾNG TRUNG</small><strong>Theo trình độ</strong><em>Từ vựng phân cấp</em></span></button>
+  </div>
+</section>
+
+<section class="study" id="study">
+  <div class="wrap">
+<div class="study-grid reveal" id="huyforumStudy">
+      <aside class="side" aria-label="Danh mục chủ đề">
+        <div class="side-head">
+          <div class="side-ring" id="sideRing"><b id="sideN">20</b></div>
+          <div><small id="sideEyebrow">DANH MỤC CHỦ ĐỀ</small><h3 id="sideHeading">Từ vựng IELTS</h3><p id="sideSub">200 mục từ mỗi chủ đề</p></div>
+        </div>
+        <div class="topic-list" id="topicList"></div>
+        <div class="side-foot">
+          <div class="row"><span>Đã học trong phiên</span><b id="ftLearned">0/0</b></div>
+          <div class="row rv"><span>Cần ôn lại</span><b id="ftReview">0</b></div>
+          <button class="reset" id="btnReset" type="button">Làm mới bộ đếm phiên</button>
+        </div>
+      </aside>
+
+      <div class="panel">
+        <div class="p-head">
+          <div>
+            <div class="ey" id="pEyebrow">IELTS TOPIC 01</div>
+            <h3 id="pTitle">—</h3>
+            <p id="pDesc"></p>
+          </div>
+          <div class="p-idx" id="pIdx">001<small>/ 0</small></div>
+        </div>
+        <div class="p-prog"><span>Đã thuộc <b id="pgText">0/0</b></span><div class="track"><i id="pgBar"></i></div></div>
+
+        <div class="tabs" role="tablist" id="tabs">
+          <button class="tab active" role="tab" data-mode="flash"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12a8 8 0 1 1-2.8-6.1M20 4v5h-5"/></svg></span><span><b>Học thẻ</b><small>Xem từ và ví dụ</small></span></button>
+          <button class="tab" role="tab" data-mode="quiz"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4l7 16M12 4L5 20M8 14.5h8"/></svg></span><span><b>Trắc nghiệm</b><small>Chọn nghĩa phù hợp</small></span></button>
+          <button class="tab" role="tab" data-mode="write"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 20l1-4L16.5 4.5a2.1 2.1 0 0 1 3 3L8 19l-4 1zM14 7l3 3"/></svg></span><span><b>Viết lại</b><small>Gõ lại mục từ</small></span></button>
+          <button class="tab" role="tab" data-mode="match"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></svg></span><span><b>Ghép cặp</b><small>Nối hai vế</small></span></button>
+          <button class="tab" role="tab" data-mode="pinyin" hidden><span class="ic hanzi-tab">拼</span><span><b>Luyện Pinyin</b><small>拼音练习</small></span></button>
+        </div>
+
+        <div class="stage" id="stage"></div>
+      </div>
+    </div>
+    <div class="course-page" id="coursePage" hidden></div>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap"><span>IELTS Vocabulary · Học từ trong cụm tự nhiên</span><span>Tiến độ lưu cục bộ trên thiết bị của bạn</span></div></footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="vocab-data.js"></script>
+<script>
+(function(){
+'use strict';
+var CORPORA=window.IELTS_CORPORA||{};
+var activeCorpus='huyforum';
+var DATA=CORPORA[activeCorpus]||window.IELTS_VOCAB;
+var $ = function(s){return document.querySelector(s)};
+if(!DATA || !DATA.topics || !DATA.topics.length){
+  document.body.innerHTML='<div style="padding:80px 24px;font-family:system-ui;max-width:640px;margin:auto"><h2>Chưa có dữ liệu từ vựng</h2><p style="margin-top:12px;color:#555">Hãy đặt file <b>vocab-data.js</b> cùng thư mục với index.html và đảm bảo nó định nghĩa <code>window.IELTS_VOCAB</code>.</p></div>';
+  return;
+}
+var topics=DATA.topics.filter(function(t){return t && t.items && t.items.length});
+topics.forEach(function(tp,i){tp.id=tp.id||(activeCorpus==='ielts4000'?'common-':'')+('t'+(i+1))});
+var PALETTE=['#27c4b8','#ffaaa5','#ffe08a','#bcd4da','#c9b8ff','#a8e6a3','#ffc58a','#9fd8ff'];
+var LS_KEY='ielts_vocab_learned_v1', SS_KEY='ielts_vocab_session_v1';
+
+/* ---------- utils ---------- */
+var pad=function(n,l){return String(n).padStart(l,'0')};
+var esc=function(s){return String(s==null?'':s).replace(/[&<>"']/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]})};
+var shuffle=function(a){a=a.slice();for(var i=a.length-1;i>0;i--){var j=Math.floor(Math.random()*(i+1));var t=a[i];a[i]=a[j];a[j]=t}return a};
+var norm=function(s){return String(s||'').toLowerCase().replace(/[’‘]/g,"'").replace(/[-–—]/g,' ').replace(/[^a-z0-9' ]/g,'').replace(/\s+/g,' ').trim()};
+function load(store,key,def){try{var v=JSON.parse(store.getItem(key));return v||def}catch(e){return def}}
+function save(store,key,v){try{store.setItem(key,JSON.stringify(v))}catch(e){}}
+
+/* ---------- state ---------- */
+var learned = load(localStorage,LS_KEY,{});
+var sess = load(sessionStorage,SS_KEY,{learned:[],review:[]});
+var sessLearned = new Set(sess.learned), sessReview = new Set(sess.review);
+var state = {t:0,i:0,mode:'flash',flipped:false,quiz:null,write:null,match:null,pinyin:null};
+function persistSession(){save(sessionStorage,SS_KEY,{learned:Array.from(sessLearned),review:Array.from(sessReview)})}
+var K=function(t,i){return topics[t].id+':'+i};
+var cur=function(){return topics[state.t].items[state.i]};
+var isLearned=function(t,i){return (learned[topics[t].id]||[]).indexOf(i)>-1};
+var countIn=function(set,tp){var n=0,p=tp.id+':';set.forEach(function(k){if(k.indexOf(p)===0)n++});return n};
+
+/* ---------- icons ---------- */
+var I={
+ arrowR:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m0 0l-6-6m6 6l-6 6"/></svg>',
+ arrowL:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5m0 0l6-6m-6 6l6 6"/></svg>',
+ speaker:'<svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 10v4h4l5 4V6L7 10H3zm13.5 2a4.5 4.5 0 0 0-2.5-4v8a4.5 4.5 0 0 0 2.5-4zM14 3.2v2.1a7 7 0 0 1 0 13.4v2.1a9 9 0 0 0 0-17.6z"/></svg>',
+ flip:'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M20 12a8 8 0 1 1-2.8-6.1M20 4v5h-5"/></svg>'
+};
+
+/* ---------- toast / speech ---------- */
+var toastT;
+function toast(html){var el=$('#toast');el.innerHTML=html;el.classList.add('show');clearTimeout(toastT);toastT=setTimeout(function(){el.classList.remove('show')},2600)}
+function speak(text,language){
+  if(!('speechSynthesis' in window)){toast('Trình duyệt này chưa hỗ trợ phát âm');return}
+  try{speechSynthesis.cancel();var u=new SpeechSynthesisUtterance(text);u.lang=language||'en-GB';u.rate=.92;speechSynthesis.speak(u)}catch(e){}
+}
+
+/* ---------- progress logic ---------- */
+function markLearned(t,i,silent){
+  var tp=topics[t],k=K(t,i);
+  var L=new Set(learned[tp.id]||[]);L.add(i);learned[tp.id]=Array.from(L);save(localStorage,LS_KEY,learned);
+  var isNew=!sessLearned.has(k);sessLearned.add(k);sessReview.delete(k);persistSession();
+  updateStats(isNew);
+  if(L.size===tp.items.length && isNew){toast('<i>★</i><span>Hoàn thành chủ đề <b>'+esc(tp.title)+'</b></span>')}
+  else if(isNew && !silent){toast('<i>+1</i><span>Đã học <b>'+sessLearned.size+'</b> từ trong phiên này</span>')}
+}
+function markReview(t,i,dropPersist){
+  var tp=topics[t],k=K(t,i);
+  if(dropPersist){var L=(learned[tp.id]||[]).filter(function(x){return x!==i});learned[tp.id]=L;save(localStorage,LS_KEY,learned)}
+  sessLearned.delete(k);sessReview.add(k);persistSession();updateStats(false);
+}
+
+/* ---------- header / hero / stats ---------- */
+var totalWords=topics.reduce(function(a,t){return a+t.items.length},0);
+var corpusSwapTimer=null;
+var pendingSearchTarget=null;
+function syncModeTabs(){
+  var chinese=activeCorpus==='hsk';
+  var captions={flash:chinese?'卡片学习':'Xem từ và ví dụ',quiz:chinese?'选择题':'Chọn nghĩa phù hợp',write:chinese?'拼写练习':'Gõ lại mục từ',match:chinese?'配对练习':'Nối hai vế',pinyin:'拼音练习'};
+  document.querySelectorAll('.tab').forEach(function(b){
+    var mode=b.dataset.mode;b.hidden=(chinese&&mode==='write')||(!chinese&&mode==='pinyin');
+    var small=b.querySelector('small');if(small)small.textContent=captions[mode]||'';
+  });
+  if((chinese&&state.mode==='write')||(!chinese&&state.mode==='pinyin'))state.mode='flash';
+}
+
+function initStatic(){
+  (function(){
+    var r=Math.random,c='',g='',p='',n,d;
+    for(n=0;n<26;n++){d=2+r()*3;g+='<span style="--x:'+(34+r()*64).toFixed(1)+'%;--y:'+(40+r()*24).toFixed(1)+'%;--w:'+(8+r()*18).toFixed(0)+'px;--d:'+d.toFixed(1)+'s;--dl:-'+(r()*d).toFixed(1)+'s"></span>'}
+    for(n=0;n<18;n++){d=14+r()*14;p+='<span style="--x:'+(r()*100).toFixed(1)+'%;--w:'+(3+r()*4).toFixed(1)+'px;--d:'+d.toFixed(1)+'s;--dl:-'+(r()*d).toFixed(1)+'s;--dx:'+Math.round(r()*260-60)+'px"></span>'}
+    $('#heroGlints').innerHTML=g;$('#heroPollen').innerHTML=p;
+  })();
+  var f=function(n){return n.toLocaleString('vi-VN')};
+  
+  $('#sideN').textContent=topics.length;
+  $('#sideHeading').textContent=activeCorpus==='hsk'?'Từ vựng HSK':'Từ vựng IELTS';
+  $('#sideEyebrow').textContent=activeCorpus==='hsk'?'DANH MỤC CẤP ĐỘ':'DANH MỤC CHỦ ĐỀ';
+  var per=topics[0].items.length, same=topics.every(function(t){return t.items.length===per});
+  $('#sideSub').textContent=same? per+' mục từ mỗi chủ đề' : f(totalWords)+' mục từ';
+}
+function updateStats(bump){
+  var c=sessLearned.size,el=$('#sessCount');
+  el.textContent=c;
+  if(bump){el.classList.remove('bump');void el.offsetWidth;el.classList.add('bump')}
+  var all=topics.reduce(function(sum,tp){return sum+(learned[tp.id]||[]).length},0);
+  $('#sideRing').style.setProperty('--p',Math.round(all/Math.max(totalWords,1)*100)+'%');
+  renderSide();renderProgress();
+}
+
+/* ---------- sidebar ---------- */
+function renderSide(){
+  var list=$('#topicList'),st=list.scrollTop;
+  list.innerHTML=topics.map(function(tp,idx){
+    var n=(learned[tp.id]||[]).length,c=PALETTE[idx%PALETTE.length],pct=Math.round(n/tp.items.length*100);
+    var title=String(tp.title||'');
+    title=title.charAt(0).toUpperCase()+title.slice(1);
+    var desc=String(tp.description||'').replace(/^Từ vựng\s+về\s*/i,'').trim();
+    if(desc)desc=desc.charAt(0).toUpperCase()+desc.slice(1);
+    var section=activeCorpus==='hsk'?'HSK LEVEL ':'IELTS TOPIC ';
+    return '<button class="tp'+(idx===state.t?' active':'')+'" data-t="'+idx+'" type="button">'+
+      '<span class="tp-n" style="background:'+c+'">'+pad(idx+1,2)+'</span>'+
+      '<span class="tp-b"><small>'+section+pad(idx+1,2)+'</small><b>'+esc(title)+'</b><em>'+esc(desc||tp.items.length+' mục từ')+'</em>'+(n?'<div class="tp-bar"><i style="width:'+pct+'%"></i></div>':'')+'</span>'+
+      '<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14m0 0l-6-6m6 6l-6 6"/></svg></button>';
+  }).join('');
+  list.scrollTop=st;
+  var tp=topics[state.t];
+  $('#ftLearned').textContent=countIn(sessLearned,tp)+'/'+tp.items.length;
+  $('#ftReview').textContent=countIn(sessReview,tp);
+}
+function renderProgress(){
+  var tp=topics[state.t],n=(learned[tp.id]||[]).length;
+  $('#pgText').textContent=n+'/'+tp.items.length;
+  $('#pgBar').style.width=Math.round(n/tp.items.length*100)+'%';
+}
+
+/* ---------- main render ---------- */
+function render(){
+  var tp=topics[state.t];
+  $('#pEyebrow').textContent=activeCorpus==='hsk'?'HSK LEVEL '+pad(state.t+1,2):'IELTS TOPIC '+pad(state.t+1,2);
+  $('#pTitle').textContent=tp.title;
+  $('#pDesc').textContent=tp.description||'';
+  $('#pIdx').innerHTML=pad(state.i+1,3)+'<small>/ '+tp.items.length+'</small>';
+  document.querySelectorAll('.tab').forEach(function(b){var on=b.dataset.mode===state.mode;b.classList.toggle('active',on);b.setAttribute('aria-selected',on)});
+  renderProgress();renderSide();
+  var stage=$('#stage');stage.style.animation='none';void stage.offsetWidth;stage.style.animation='';
+  var renderers={flash:renderFlash,quiz:renderQuiz,write:renderWrite,match:renderMatch,pinyin:renderPinyin};
+  (renderers[state.mode]||renderFlash)();
+}
+function go(d){var n=topics[state.t].items.length;state.i=(state.i+d+n)%n;state.flipped=false;state.pinyin=null;render()}
+function setTopic(t){state.t=t;state.i=0;state.flipped=false;state.quiz=state.write=state.match=state.pinyin=null;render()}
+
+/* ---------- FLASHCARD (một thẻ xanh duy nhất) ---------- */
+function renderFlash(){
+  var it=cur(),L=isLearned(state.t,state.i);
+  $('#stage').innerHTML=
+   '<div class="fc-wrap"><div class="fc" id="fc"><div class="face front">'+
+    '<div class="f-top"><span class="lab">'+esc((it.type||'Word')+' · '+(it.source||'IELTS'))+'</span><span class="badge'+(L?' on':'')+'">✓ ĐÃ HỌC</span></div>'+
+    '<div class="f-word'+(activeCorpus==='hsk'?' hanzi-word':'')+'" lang="'+(activeCorpus==='hsk'?'zh-CN':'en')+'">'+esc(it.en)+'</div>'+
+    '<div class="f-ipa"><span>'+esc(it.ipa||'')+'</span><button class="btn-listen" data-act="speak" type="button">'+I.speaker+'NGHE</button></div>'+
+    '<div class="f-sep"></div>'+
+    '<div class="f-mean">'+esc(it.vi)+'</div>'+
+    '<div class="f-ex">'+(it.example?'<span'+(activeCorpus==='hsk'?' lang="zh-CN"':'')+'>'+esc(it.example.en||'')+'</span>'+(activeCorpus==='hsk'&&it.example.pinyin?'<em class="example-pinyin">'+esc(it.example.pinyin)+'</em>':'')+(it.example.vi?'<em>'+esc(it.example.vi)+'</em>':''):'')+'</div>'+
+   '</div>'+
+   '<div class="fc-actions"><button class="nav-btn" data-act="prev" type="button" aria-label="Trước">'+I.arrowL+'</button>'+
+    '<button class="act-btn no" data-act="unknown" type="button">↺ Chưa thuộc</button>'+
+    '<button class="act-btn yes" data-act="known" type="button">✓ Đã học</button>'+
+    '<button class="nav-btn" data-act="next" type="button" aria-label="Sau">'+I.arrowR+'</button></div></div></div>'+
+   '<div class="kbd-hint"><kbd>←</kbd><kbd>→</kbd> chuyển từ · <kbd>1</kbd> chưa thuộc · <kbd>2</kbd> đã học · <kbd>P</kbd> nghe</div>';
+}
+
+/* ---------- QUIZ ---------- */
+function buildQuiz(){
+  var tp=topics[state.t],it=cur(),pool=shuffle(tp.items.filter(function(x,idx){return idx!==state.i&&x.vi&&x.vi!==it.vi})),d=[],used={};
+  function addUnique(items){items.forEach(function(x){var key=String(x.vi||'').trim().toLocaleLowerCase();if(key&&key!==String(it.vi||'').trim().toLocaleLowerCase()&&!used[key]&&d.length<3){used[key]=true;d.push(x)}})}
+  addUnique(pool);
+  if(d.length<3){var others=[];topics.forEach(function(t,ti){if(ti!==state.t)others=others.concat(t.items)});addUnique(shuffle(others))}
+  state.quiz={t:state.t,i:state.i,opts:shuffle([it.vi].concat(d.map(function(x){return x.vi}))),answered:false};
+}
+function renderQuiz(){
+  if(!state.quiz||state.quiz.t!==state.t||state.quiz.i!==state.i)buildQuiz();
+  var it=cur(),q=state.quiz;
+  $('#stage').innerHTML=
+   '<div class="qbox"><div class="q-label">Chọn nghĩa phù hợp</div>'+
+   '<div class="q-word'+(activeCorpus==='hsk'?' hanzi-word':'')+'" lang="'+(activeCorpus==='hsk'?'zh-CN':'en')+'">'+esc(it.en)+'</div>'+
+   '<div class="q-meta"><span class="ipa">'+esc(it.ipa||'')+'</span><button class="btn-listen dk" data-act="speak" type="button">'+I.speaker+'NGHE</button></div>'+
+   '<div class="q-src">'+esc((it.type||'Word')+' · '+(it.source||'IELTS'))+'</div>'+
+   '<div class="opts">'+q.opts.map(function(o,n){return '<button class="opt-btn" data-act="opt" data-v="'+n+'" type="button"><span class="k">'+'ABCD'[n]+'</span><span>'+esc(o)+'</span></button>'}).join('')+'</div>'+
+   '<div class="feedback" id="fb"></div></div>';
+}
+function answerQuiz(n){
+  var q=state.quiz;if(!q||q.answered)return;q.answered=true;
+  var it=cur(),ok=q.opts[n]===it.vi,btns=document.querySelectorAll('.opt-btn');
+  btns.forEach(function(b,idx){b.disabled=true;if(q.opts[idx]===it.vi)b.classList.add('correct');else if(idx===n)b.classList.add('wrong');else b.classList.add('dim')});
+  if(ok)markLearned(state.t,state.i);else markReview(state.t,state.i,false);
+  var fb=$('#fb');
+  fb.innerHTML='<div class="msg"><b class="'+(ok?'ok':'no')+'">'+(ok?'Chính xác!':'Chưa đúng')+'</b>'+(ok?'':'Đáp án: '+esc(it.vi))+(it.example?'<em>'+esc(it.example.en)+'</em>':'')+'</div><button class="btn-next" data-act="next" type="button">Câu tiếp'+I.arrowR+'</button>';
+  fb.classList.add('show');
+}
+
+/* ---------- HSK PINYIN ---------- */
+function buildPinyin(){
+  var tp=topics[state.t],it=cur(),answer=String(it.ipa||'').trim(),seen={},opts=[];
+  function add(value){value=String(value||'').trim();var key=value.toLocaleLowerCase();if(value&&key!==answer.toLocaleLowerCase()&&!seen[key]){seen[key]=true;opts.push(value)}}
+  var pool=shuffle(tp.items.filter(function(x,idx){return idx!==state.i&&String(x.ipa||'').trim()}));
+  for(var i=0;i<pool.length&&opts.length<3;i++)add(pool[i].ipa);
+  if(opts.length<3){var rest=[];topics.forEach(function(t,ti){if(ti!==state.t)rest=rest.concat(t.items)});rest=shuffle(rest);for(var j=0;j<rest.length&&opts.length<3;j++)add(rest[j].ipa)}
+  state.pinyin={t:state.t,i:state.i,answer:answer,opts:shuffle([answer].concat(opts)).slice(0,4),answered:false};
+}
+function renderPinyin(){
+  if(!state.pinyin||state.pinyin.t!==state.t||state.pinyin.i!==state.i)buildPinyin();
+  var it=cur(),q=state.pinyin;
+  $('#stage').innerHTML='<div class="qbox pinyin-box"><div class="q-label">Chọn Pinyin đúng · 选择正确拼音</div>'+
+    '<div class="q-word hanzi-word" lang="zh-CN">'+esc(it.en)+'</div>'+
+    '<div class="q-meta"><span class="ipa">'+esc(it.vi)+'</span><button class="btn-listen dk" data-act="speak" type="button">'+I.speaker+'NGHE</button></div>'+
+    '<div class="q-src">'+esc(it.source||'HSK')+' · Phiên âm Pinyin</div>'+ 
+    '<div class="opts pinyin-options">'+q.opts.map(function(o,n){return '<button class="opt-btn" data-act="pinyinOpt" data-v="'+n+'" type="button"><span class="k">'+'ABCD'[n]+'</span><span>'+esc(o)+'</span></button>'}).join('')+'</div>'+
+    '<div class="feedback" id="pinyinFb"></div></div>';
+}
+function answerPinyin(n){
+  var q=state.pinyin;if(!q||q.answered||!q.opts[n])return;q.answered=true;
+  var it=cur(),ok=q.opts[n]===q.answer,buttons=document.querySelectorAll('.pinyin-options .opt-btn');
+  buttons.forEach(function(b,i){b.disabled=true;if(q.opts[i]===q.answer)b.classList.add('correct');else if(i===n)b.classList.add('wrong');else b.classList.add('dim')});
+  if(ok)markLearned(state.t,state.i);else markReview(state.t,state.i,false);
+  var ex=it.example||{},fb=$('#pinyinFb');
+  var correction=ok?'':('<em class="pinyin-correction">Đáp án đúng: '+esc(q.answer)+'<br>Chữa lỗi: '+esc(it.en)+' đọc là '+esc(q.answer)+', nghĩa là '+esc(it.vi)+'.</em>');
+  var sample=ex.en?'<em lang="zh-CN">'+esc(ex.en)+'</em>':'';
+  if(ex.pinyin)sample+='<em class="example-pinyin">'+esc(ex.pinyin)+'</em>';
+  if(ex.vi)sample+='<em>'+esc(ex.vi)+'</em>';
+  fb.innerHTML='<div class="msg"><b class="'+(ok?'ok':'no')+'">'+(ok?'Chính xác · 正确':'Chưa đúng · 不正确')+'</b>'+correction+sample+'</div><button class="btn-next" data-act="next" type="button">Câu tiếp'+I.arrowR+'</button>';
+  fb.classList.add('show');
+}
+
+/* ---------- WRITE ---------- */
+function renderWrite(){
+  var it=cur();
+  if(!state.write||state.write.t!==state.t||state.write.i!==state.i)state.write={t:state.t,i:state.i,done:false};
+  $('#stage').innerHTML=
+   '<div class="qbox"><div class="q-label">Viết lại mục từ</div>'+
+   '<div class="w-title">'+esc(it.vi)+'</div>'+
+   '<div class="w-sub">Nhập từ hoặc cụm từ tiếng Anh tương ứng.</div>'+
+   '<label class="w-lab" for="wIn">Câu trả lời</label>'+
+   '<div class="w-row"><input class="w-input" id="wIn" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Nhập mục từ tiếng Anh"><button class="w-btn" id="wBtn" data-act="check" type="button">Kiểm tra</button></div>'+
+   '<div class="w-tools" id="wTools"><button data-act="hint" type="button">Gợi ý</button><button data-act="speakAns" type="button" style="display:none">Nghe đáp án</button><span class="hint" id="wHint"></span></div>'+
+   '<div class="feedback" id="fb"></div></div>';
+  var inp=$('#wIn');
+  inp.addEventListener('input',function(){$('#wBtn').classList.toggle('ready',inp.value.trim().length>0)});
+  inp.addEventListener('keydown',function(e){if(e.key==='Enter'){e.preventDefault();if(state.write.done)go(1);else checkWrite()}});
+  if(window.matchMedia('(pointer:fine)').matches)setTimeout(function(){inp.focus()},60);
+}
+function checkWrite(){
+  var w=state.write;if(!w||w.done)return;
+  var inp=$('#wIn'),ans=norm(inp.value);if(!ans)return;
+  var it=cur(),ok=[it.en].concat(it.alt||[]).some(function(x){return norm(x)===ans});
+  w.done=true;inp.disabled=true;inp.classList.add(ok?'ok':'no');
+  if(ok)markLearned(state.t,state.i);else markReview(state.t,state.i,false);
+  var fb=$('#fb');
+  fb.innerHTML='<div class="msg"><b class="'+(ok?'ok':'no')+'">'+(ok?'Chính xác!':'Chưa đúng')+'</b>'+(ok?esc(it.en):'Đáp án: <strong>'+esc(it.en)+'</strong>')+(it.example?'<em>'+esc(it.example.en)+'</em>':'')+'</div>'+
+    '<div style="display:flex;gap:10px;flex:none">'+(ok?'':'<button class="btn-ghost" data-act="retry" type="button">Thử lại</button>')+'<button class="btn-next" data-act="next" type="button">Tiếp'+I.arrowR+'</button></div>';
+  fb.classList.add('show');
+  var wb=$('#wBtn');wb.classList.remove('ready');wb.textContent=ok?'✓ Đúng':'✗ Sai';
+  document.querySelector('[data-act="speakAns"]').style.display='';
+}
+function hintWrite(){
+  var it=cur();
+  $('#wHint').textContent=it.en.split(' ').map(function(w){return w.charAt(0)+new Array(w.length).join('·')}).join('   ');
+}
+
+/* ---------- MATCH ---------- */
+function buildMatch(){
+  var items=topics[state.t].items,n=Math.min(4,items.length),ids=[];
+  for(var k=0;k<n;k++)ids.push((state.i+k)%items.length);
+  state.match={t:state.t,start:state.i,ids:ids,left:shuffle(ids),right:shuffle(ids),done:new Set(),sel:null,bad:null};
+}
+function renderMatch(){
+  if(!state.match||state.match.t!==state.t||state.match.start!==state.i)buildMatch();
+  var m=state.match,items=topics[state.t].items;
+  function tile(side,id){
+    var it=items[id],txt=side==='L'?it.en:it.vi;
+    var cls='tile'+(m.done.has(id)?' done':'')+(m.sel&&m.sel.side===side&&m.sel.id===id?' sel':'')+(m.bad&&((m.bad.a.side===side&&m.bad.a.id===id)||(m.bad.b.side===side&&m.bad.b.id===id))?' bad':'');
+    return '<button class="'+cls+'" data-act="mtile" data-side="'+side+'" data-id="'+id+'" type="button"'+(m.done.has(id)?' disabled':'')+'><span class="tag">'+(side==='L'?(activeCorpus==='hsk'?'汉字':'EN'):(activeCorpus==='hsk'?'释义':'VI'))+'</span><span>'+esc(txt)+'</span></button>';
+  }
+  var fin=m.done.size===m.ids.length;
+  $('#stage').innerHTML=
+   '<div class="qbox"><div class="q-label">Ghép cặp</div>'+
+   '<div class="m-head"><div><div class="w-title" style="margin-bottom:6px">Mục từ và nghĩa</div><div class="w-sub">Mỗi lượt gồm một mục từ và một nghĩa tương ứng.</div></div><div class="m-score">'+m.done.size+'/'+m.ids.length+'</div></div>'+
+   '<div class="m-grid"><div class="m-col">'+m.left.map(function(id){return tile('L',id)}).join('')+'</div><div class="m-col">'+m.right.map(function(id){return tile('R',id)}).join('')+'</div></div>'+
+   (fin?'<div class="m-done"><b>Hoàn thành vòng này!</b><button class="btn-next" data-act="mnext" type="button">Vòng tiếp'+I.arrowR+'</button></div>':'')+'</div>';
+}
+function clickTile(side,id){
+  var m=state.match;if(!m||m.done.has(id)||m.bad)return;
+  if(!m.sel||m.sel.side===side){m.sel={side:side,id:id};renderMatch();return}
+  var a=m.sel,b={side:side,id:id};
+  if(a.id===b.id){
+    m.done.add(id);m.sel=null;markLearned(state.t,id,true);renderMatch();
+    if(m.done.size===m.ids.length)toast('<i>★</i><span>Hoàn thành! Phiên này đã học <b>'+sessLearned.size+'</b> từ</span>');
+  }else{
+    m.bad={a:a,b:b};m.sel=null;renderMatch();
+    setTimeout(function(){if(state.match===m){m.bad=null;renderMatch()}},450);
+  }
+}
+
+/* ---------- download (CSV of current topic) ---------- */
+function downloadTopic(){
+  var tp=topics[state.t];
+  var q=function(s){return '"'+String(s==null?'':s).replace(/"/g,'""')+'"'};
+  var rows=[['en','ipa','vi','type','example_en','example_pinyin','example_vi'].join(',')].concat(tp.items.map(function(it){return [it.en,it.ipa,it.vi,it.type,it.example&&it.example.en,it.example&&it.example.pinyin,it.example&&it.example.vi].map(q).join(',')}));
+  var blob=new Blob(['\ufeff'+rows.join('\n')],{type:'text/csv;charset=utf-8'});
+  var a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download=activeCorpus+'-'+tp.id+'.csv';document.body.appendChild(a);a.click();a.remove();
+  setTimeout(function(){URL.revokeObjectURL(a.href)},1000);
+  toast('<i>↓</i><span>Đã tải bộ từ <b>'+esc(tp.title)+'</b></span>');
+}
+
+/* ---------- course picker / alternate course shells ---------- */
+var courseModes=[['flash','Học thẻ'],['quiz','Trắc nghiệm'],['write','Viết lại'],['match','Ghép cặp']];
+var courseSelection={course:'ielts4000',mode:'flash',choice:0};
+function activateCorpus(course){
+  var next=CORPORA[course];if(!next||!next.topics||!next.topics.length)return;
+  if(corpusSwapTimer)clearTimeout(corpusSwapTimer);
+  var grid=$('#huyforumStudy');grid.classList.remove('corpus-in');grid.classList.add('corpus-out');
+  corpusSwapTimer=setTimeout(function(){
+    activeCorpus=course;DATA=next;topics=next.topics.filter(function(t){return t&&t.items&&t.items.length});
+    topics.forEach(function(tp,i){if(course==='ielts4000'&&tp.id.indexOf('common-')!==0)tp.id='common-'+tp.id;tp.id=tp.id||((course==='ielts4000'?'common-':'')+'t'+(i+1))});
+    totalWords=topics.reduce(function(a,t){return a+t.items.length},0);
+    state.t=0;state.i=0;state.flipped=false;state.quiz=state.write=state.match=state.pinyin=null;
+    if(pendingSearchTarget&&pendingSearchTarget.course===course){state.t=pendingSearchTarget.topic;state.i=pendingSearchTarget.item;state.flipped=false;pendingSearchTarget=null}
+    $('#sideN').textContent=topics.length;
+    $('#sideHeading').textContent=course==='hsk'?'Từ vựng HSK':'Từ vựng IELTS';
+    $('#sideEyebrow').textContent=course==='hsk'?'DANH MỤC CẤP ĐỘ':'DANH MỤC CHỦ ĐỀ';
+    var per=topics[0].items.length,same=topics.every(function(t){return t.items.length===per});
+    $('#sideSub').textContent=same?per+' mục từ mỗi chủ đề':totalWords.toLocaleString('vi-VN')+' mục từ';
+    syncModeTabs();updateStats(false);render();
+    grid.classList.remove('corpus-out');grid.classList.add('corpus-in');
+    setTimeout(function(){grid.classList.remove('corpus-in')},400);
+    corpusSwapTimer=null;
+  },170);
+}
+function showCourse(course){
+  document.querySelectorAll('.course-card').forEach(function(b){var on=b.dataset.course===course;b.classList.toggle('active',on);b.setAttribute('aria-pressed',String(on))});
+  courseSelection.course=course;
+  $('#coursePage').hidden=true;$('#huyforumStudy').hidden=false;
+  if(CORPORA[course])activateCorpus(course);
+}
+function renderCoursePage(){
+  var hsk=courseSelection.course==='hsk';
+  var choices=hsk?['HSK 1','HSK 2','HSK 3','HSK 4','HSK 5','HSK 6']:['Giáo dục','Môi trường','Công nghệ','Sức khỏe','Công việc','Xã hội','Khoa học','Văn hóa'];
+  var desc=hsk?'Chọn cấp độ HSK để mở bộ từ vựng và luyện tập theo trình độ.':'Chọn chủ đề IELTS để học theo lĩnh vực với bốn chế độ luyện tập.';
+  var heading=hsk?'Từ vựng HSK 1–6':'4.000 từ vựng IELTS theo chủ đề';
+  var chosen=choices[courseSelection.choice]||choices[0];
+  $('#coursePage').innerHTML='<div class="course-page-top"><div><span class="eyebrow">'+(hsk?'CHINESE · HSK':'IELTS VOCABULARY')+'</span><h2>'+heading+'</h2><p class="course-desc">'+desc+'</p></div><button class="course-back" type="button" data-course-action="back">← Các bộ học</button></div>'+
+    '<div class="course-modes" aria-label="Chế độ luyện tập">'+courseModes.map(function(m){return '<button type="button" class="course-mode'+(courseSelection.mode===m[0]?' active':'')+'" data-course-mode="'+m[0]+'">'+m[1]+'</button>'}).join('')+'</div>'+
+    '<div class="course-choice-grid" aria-label="'+(hsk?'Chọn cấp độ HSK':'Chọn chủ đề IELTS')+'">'+choices.map(function(x,i){return '<button type="button" class="course-choice'+(i===courseSelection.choice?' active':'')+'" data-course-choice="'+i+'">'+x+'<small>'+(hsk?'Từ vựng theo cấp độ':'Từ vựng theo chủ đề')+'</small></button>'}).join('')+'</div>'+
+    '<div class="course-empty"><strong>'+chosen+' · '+courseModes.filter(function(m){return m[0]===courseSelection.mode})[0][1]+'</strong>'+(hsk?'Khung học HSK đã sẵn sàng. Bộ dữ liệu từ vựng HSK chưa được nạp; hiện chưa có từ để bắt đầu luyện tập.':'Khung học IELTS theo chủ đề đã sẵn sàng. Bộ 4.000 từ chưa được nạp; dữ liệu hiện có nằm trong bộ HuyForum ở mục đầu tiên.')+'</div>';
+}
+/* ---------- events ---------- */
+$('#coursePicker').addEventListener('click',function(e){var b=e.target.closest('[data-course]');if(b)showCourse(b.dataset.course)});
+var searchInput=$('#wordSearchInput'),searchResults=$('#wordSearchResults'),searchMatches=[];
+function searchText(value){return String(value||'').toLocaleLowerCase().replace(/\s+/g,' ').trim()}
+function hideSearchResults(){searchResults.hidden=true;searchInput.setAttribute('aria-expanded','false')}
+function searchWords(query){
+  var q=searchText(query);if(!q){hideSearchResults();return}
+  var found=[];
+  Object.keys(CORPORA).forEach(function(course){var corpus=CORPORA[course];(corpus.topics||[]).forEach(function(tp,ti){(tp.items||[]).forEach(function(item,ii){
+    var fields=[item.en,item.ipa,item.vi],rank=99;
+    fields.forEach(function(value){var text=searchText(value);if(!text)return;if(text===q)rank=Math.min(rank,0);else if(text.indexOf(q)===0)rank=Math.min(rank,1);else if(text.indexOf(q)>-1)rank=Math.min(rank,2)});
+    if(rank<99)found.push({course:course,topic:ti,item:ii,rank:rank,en:item.en,ipa:item.ipa,vi:item.vi,topicTitle:tp.title,courseTitle:course==='hsk'?'HSK '+(tp.title||''):course==='huyforum'?'HuyForum · IELTS':'IELTS · 4.000 từ'});
+  })})});
+  found.sort(function(a,b){return a.rank-b.rank||a.en.localeCompare(b.en)});searchMatches=found.slice(0,8);
+  searchResults.innerHTML=searchMatches.length?searchMatches.map(function(m,i){return '<button class="word-search-result" type="button" role="option" aria-selected="false" data-search-result="'+i+'"><b'+(m.course==='hsk'?' lang="zh-CN"':'')+'>'+esc(m.en)+'</b><span>'+esc(m.ipa||'')+(m.ipa&&m.vi?' · ':'')+esc(m.vi||'')+'</span><small>'+esc(m.courseTitle)+' · '+esc(m.topicTitle||'')+'</small></button>'}).join(''):'<div class="word-search-empty">Không tìm thấy từ phù hợp trong các bộ IELTS và HSK.</div>';
+  searchResults.hidden=false;searchInput.setAttribute('aria-expanded','true');
+}
+function openSearchMatch(index){var m=searchMatches[index];if(!m)return;hideSearchResults();searchInput.value=m.en;
+  var focusStudy=function(){var study=$('#study');if(study)study.scrollIntoView({behavior:'smooth',block:'start'})};
+  if(activeCorpus===m.course){state.t=m.topic;state.i=m.item;state.flipped=false;state.quiz=state.write=state.match=state.pinyin=null;render();focusStudy()}
+  else{pendingSearchTarget={course:m.course,topic:m.topic,item:m.item};showCourse(m.course);setTimeout(focusStudy,260)}
+}
+searchInput.addEventListener('input',function(){searchWords(searchInput.value)});
+searchInput.addEventListener('keydown',function(e){if(e.key==='Escape'){hideSearchResults();return}if(e.key==='Enter'){e.preventDefault();openSearchMatch(0)}if(e.key==='ArrowDown'&&!searchResults.hidden){e.preventDefault();var first=searchResults.querySelector('button');if(first)first.focus()}});
+searchResults.addEventListener('click',function(e){var b=e.target.closest('[data-search-result]');if(b)openSearchMatch(+b.dataset.searchResult)});
+searchResults.addEventListener('keydown',function(e){var b=e.target.closest('[data-search-result]');if(!b)return;var i=+b.dataset.searchResult;if(e.key==='Enter'||e.key===' '){e.preventDefault();openSearchMatch(i)}else if(e.key==='ArrowDown'){e.preventDefault();var n=searchResults.querySelector('[data-search-result="'+Math.min(i+1,searchMatches.length-1)+'"]');if(n)n.focus()}else if(e.key==='ArrowUp'){e.preventDefault();if(i===0)searchInput.focus();else{var p=searchResults.querySelector('[data-search-result="'+(i-1)+'"]');if(p)p.focus()}}else if(e.key==='Escape'){hideSearchResults();searchInput.focus()}});
+document.addEventListener('click',function(e){if(!e.target.closest('.word-search'))hideSearchResults()});
+$('#coursePage').addEventListener('click',function(e){var back=e.target.closest('[data-course-action=back]');if(back){showCourse('huyforum');return}var mode=e.target.closest('[data-course-mode]');if(mode){courseSelection.mode=mode.dataset.courseMode;renderCoursePage();return}var choice=e.target.closest('[data-course-choice]');if(choice){courseSelection.choice=+choice.dataset.courseChoice;renderCoursePage()}});
+$('#topicList').addEventListener('click',function(e){var b=e.target.closest('.tp');if(b)setTopic(+b.dataset.t)});
+$('#tabs').addEventListener('click',function(e){var b=e.target.closest('.tab');if(!b)return;state.mode=b.dataset.mode;state.flipped=false;render()});
+$('#btnDownload').addEventListener('click',downloadTopic);
+$('#btnReset').addEventListener('click',function(){sessLearned.clear();sessReview.clear();persistSession();updateStats(false);toast('<i>↺</i><span>Đã làm mới bộ đếm phiên</span>')});
+$('#stage').addEventListener('click',function(e){
+  var el=e.target.closest('[data-act]');if(!el)return;
+  var act=el.dataset.act;
+  if(act==='speak'){e.stopPropagation();speak(cur().en,activeCorpus==='hsk'?'zh-CN':'en-GB');return}
+  if(act==='speakAns'){speak(cur().en,activeCorpus==='hsk'?'zh-CN':'en-GB');return}
+  if(act==='prev')return go(-1);
+  if(act==='next')return go(1);
+  if(act==='known'){markLearned(state.t,state.i);var c=$('#fc');if(c)c.classList.add('pulse');setTimeout(function(){go(1)},320);return}
+  if(act==='unknown'){markReview(state.t,state.i,true);var c2=$('#fc');if(c2)c2.classList.add('pulse');toast('<i>↺</i><span>Đã thêm vào danh sách cần ôn lại</span>');setTimeout(function(){go(1)},320);return}
+  if(act==='opt')return answerQuiz(+el.dataset.v);
+  if(act==='pinyinOpt')return answerPinyin(+el.dataset.v);
+  if(act==='check')return checkWrite();
+  if(act==='hint')return hintWrite();
+  if(act==='retry'){state.write=null;renderWrite();return}
+  if(act==='mtile')return clickTile(el.dataset.side,+el.dataset.id);
+  if(act==='mnext'){var n=topics[state.t].items.length;state.i=(state.match.start+state.match.ids.length)%n;state.match=null;render();return}
+});
+document.addEventListener('keydown',function(e){
+  var tag=(e.target.tagName||'').toLowerCase();if(tag==='input'||tag==='textarea'||e.metaKey||e.ctrlKey||e.altKey)return;
+  var inStudy=true;
+  if(e.key==='ArrowRight'){go(1)}
+  else if(e.key==='ArrowLeft'){go(-1)}
+  else if(state.mode==='flash'&&e.key==='2'){markLearned(state.t,state.i);setTimeout(function(){go(1)},250)}
+  else if(state.mode==='flash'&&e.key==='1'){markReview(state.t,state.i,true);setTimeout(function(){go(1)},250)}
+  else if(e.key==='p'||e.key==='P'){speak(cur().en,activeCorpus==='hsk'?'zh-CN':'en-GB')}
+  else if(state.mode==='pinyin'&&'1234'.indexOf(e.key)>-1&&e.key){answerPinyin(+e.key-1)}
+  else if(state.mode==='quiz'&&'1234'.indexOf(e.key)>-1&&e.key){answerQuiz(+e.key-1)}
+});
+
+/* reveal on scroll */
+if('IntersectionObserver' in window){
+  var io=new IntersectionObserver(function(es){es.forEach(function(en){if(en.isIntersecting){en.target.classList.add('in');io.unobserve(en.target)}})},{threshold:.08});
+  document.querySelectorAll('.reveal').forEach(function(el){io.observe(el)});
+}else{document.querySelectorAll('.reveal').forEach(function(el){el.classList.add('in')})}
+
+/* boot */
+initStatic();syncModeTabs();updateStats(false);render();
+})();
+</script>
+</body>
+</html>
